@@ -9,10 +9,10 @@ In this hackathon, each team will build **DeliveryPulse**, an end-to-end enterpr
 
 - **.NET Web API** for business logic, APIs, validation, risk scoring, data access, and tests
 - **Angular** for the frontend dashboard and user workflows
-- **Copilot-assisted development concepts** including instructions, prompts, skills, agents, MCPs, and hooks
+- **GitHub Copilot-assisted development concepts** including instructions, prompts, skills, agents, MCPs, and hooks
 - **Task-based submissions** through the approved submission form after each milestone
 
-By the end, each team should have a working application that demonstrates software design, implementation, testing, quality gates, and responsible Copilot-assisted development.
+By the end, each team should have a working application that demonstrates software design, implementation, testing, quality gates, and responsible GitHub Copilot-assisted development.
 
 ---
 
@@ -54,7 +54,7 @@ By the end, each team should have a working application that demonstrates softwa
 | Frontend tests | Jasmine/Karma or Jest |
 | E2E tests | Playwright or Cypress |
 | Quality automation | Local scripts for build, lint, format, and tests |
-| Copilot context | Team instructions, reusable prompts, skills, agent workflows, MCP configuration |
+| GitHub Copilot context | Team instructions, reusable prompts, skills, agent workflows, MCP configuration |
 
 ---
 
@@ -78,7 +78,7 @@ DeliveryPulse
 ├── tools
 │   ├── mcp
 │   └── quality
-├── copilot
+├── GitHub
 │   ├── instructions.md
 │   ├── prompts
 │   ├── skills
@@ -109,7 +109,7 @@ After completing each task, submit the following through the hackathon form:
 4. Screenshot of working output
 5. Screenshot of test result or quality check result, where applicable
 6. Link or screenshot of the updated `docs/prompt-log.md`
-7. Short note on what Copilot capability was used
+7. Short note on what GitHub Copilot capability was used
 8. Blockers, assumptions, or reviewer questions
 
 ### Approval rule
@@ -128,7 +128,7 @@ After completing each task, submit the following through the hackathon form:
 | Code quality and maintainability | 15 |
 | Business relevance | 15 |
 | Test coverage and validation | 15 |
-| Effective use of Copilot concepts | 15 |
+| Effective use of GitHub Copilot concepts | 15 |
 | Demo quality and documentation | 10 |
 | **Total** | **100** |
 
@@ -158,12 +158,7 @@ Set up the team workspace and define the solution architecture, personas, user s
 - Create at least 10 user stories in `docs/backlog.md`.
 - Create a task tracker in Excel, Planner, Teams Loop, or another organizer-approved tool.
 
-### Copilot focus
-
-- Use Copilot Chat to refine user stories and acceptance criteria.
-- Capture key prompts in `docs/prompt-log.md`.
-
-### Deliverables
+  ### Deliverables
 
 - Updated `README.md`
 - `docs/architecture.md`
@@ -184,28 +179,28 @@ Set up the team workspace and define the solution architecture, personas, user s
 
 ---
 
-## Task 2 - Add Copilot instructions, reusable prompts, and team skills
+## Task 2 - Add GitHub Copilot instructions, reusable prompts, and team skills
 
 ### Objective
-Create shared Copilot guidance so all team members generate code consistently.
+Create shared GitHub Copilot guidance so all team members generate code consistently.
 
 ### Activities
 
-- Create `copilot/instructions.md` with coding standards.
+- Create `github/instructions.md` with coding standards.
 - Add backend standards for .NET APIs, services, validation, error handling, and testing.
 - Add frontend standards for Angular components, services, routing, forms, and tests.
-- Create reusable prompt files in `copilot/prompts`, for example:
+- Create reusable prompt files in `github/prompts`, for example:
   - `design-api.prompt.md`
   - `generate-angular-component.prompt.md`
   - `write-unit-tests.prompt.md`
   - `security-review.prompt.md`
   - `refactor-code.prompt.md`
-- Create team skill files in `copilot/skills`, for example:
+- Create team skill files in `github/skills`, for example:
   - `dotnet-architect.md`
   - `angular-reviewer.md`
   - `test-engineer.md`
 
-### Copilot focus
+### GitHub Copilot focus
 
 - Instructions
 - Prompts
@@ -213,14 +208,14 @@ Create shared Copilot guidance so all team members generate code consistently.
 
 ### Deliverables
 
-- `copilot/instructions.md`
+- `GitHub Copilot/instructions.md`
 - At least 5 prompt files
 - At least 2 reusable skill files
 
 ### Evidence to submit
 
-- Screenshot of `copilot` folder
-- Screenshot showing Copilot using one instruction or prompt file
+- Screenshot of `github` folder
+- Screenshot showing GitHub Copilot using one instruction or prompt file
 
 ### Approval criteria
 
@@ -244,9 +239,9 @@ Create the technical foundation for the full-stack application.
 - Add Angular shell with routes for Dashboard, Projects, Risks, Actions, and Admin.
 - Add local build scripts for backend and frontend.
 
-### Copilot focus
+### GitHub Copilot focus
 
-- Use Copilot Agent Mode or Chat to scaffold multi-file changes.
+- Use GitHub Copilot to scaffold multi-file changes.
 - Use prompt files from Task 2.
 
 ### Deliverables
@@ -292,10 +287,10 @@ Implement business rules such as:
 - A milestone becomes `Delayed` when due date has passed and status is incomplete.
 - An action item cannot be closed without a resolution note.
 
-### Copilot focus
+### GitHub Copilot focus
 
-- Use Copilot to generate domain models and validators.
-- Use Copilot to explain generated code before submission.
+- Use GitHub Copilot to generate domain models and validators.
+- Use GitHub Copilot to explain generated code before submission.
 
 ### Deliverables
 
@@ -308,7 +303,7 @@ Implement business rules such as:
 
 - Screenshot of domain model files
 - Screenshot of seeded data or API response
-- Prompt log entry showing how Copilot helped design rules
+- Prompt log entry showing how GitHub Copilot helped design rules
 
 ### Approval criteria
 
@@ -355,10 +350,10 @@ Add:
 - Request validation
 - Swagger examples
 
-### Copilot focus
+### GitHub Copilot focus
 
 - Use prompts for API design and controller generation.
-- Use Copilot to generate API examples and error handling patterns.
+- Use GitHub Copilot to generate API examples and error handling patterns.
 
 ### Deliverables
 
@@ -403,9 +398,9 @@ The dashboard should show:
 - Overdue actions
 - Upcoming milestones
 
-### Copilot focus
+### GitHub Copilot focus
 
-- Use Copilot to generate Angular components, services, and reactive forms.
+- Use GitHub Copilot to generate Angular components, services, and reactive forms.
 - Use reusable frontend prompt files.
 
 ### Deliverables
@@ -446,9 +441,9 @@ Add enterprise-style controls and traceability.
 - Add audit entries when risks or action items are created, updated, or closed.
 - Add frontend error handling and user notifications.
 
-### Copilot focus
+### GitHub Copilot focus
 
-- Use Copilot to identify authorization gaps.
+- Use GitHub Copilot to identify authorization gaps.
 - Use a security-review prompt before submitting.
 
 ### Deliverables
@@ -474,7 +469,7 @@ Add enterprise-style controls and traceability.
 ## Task 8 - Add unit, integration, frontend, and end-to-end tests
 
 ### Objective
-Prove that the application works and that Copilot-generated code is validated.
+Prove that the application works and that GitHub Copilot-generated code is validated.
 
 ### Activities
 
@@ -494,10 +489,10 @@ Minimum expectations:
 - Frontend component or service tests
 - One E2E test
 
-### Copilot focus
+### GitHub Copilot focus
 
-- Use Copilot to generate test cases from acceptance criteria.
-- Use Copilot to find missing edge cases.
+- Use GitHub Copilot to generate test cases from acceptance criteria.
+- Use GitHub Copilot to find missing edge cases.
 
 ### Deliverables
 
@@ -519,10 +514,10 @@ Minimum expectations:
 
 ---
 
-## Task 9 - Use MCP to connect Copilot to project context
+## Task 9 - Use MCP to connect GitHub Copilot to project context
 
 ### Objective
-Demonstrate how MCP can provide external or structured context to Copilot during development.
+Demonstrate how MCP can provide external or structured context to GitHub Copilot during development.
 
 ### Activities
 
@@ -543,11 +538,11 @@ Use MCP-backed context to complete one development task, such as:
 - Create sample seed data
 - Generate documentation from project metadata
 
-### Copilot focus
+### GitHub Copilot focus
 
 - MCP configuration
 - Using external context safely
-- Prompting Copilot with structured project context
+- Prompting GitHub Copilot with structured project context
 
 ### Deliverables
 
@@ -558,7 +553,7 @@ Use MCP-backed context to complete one development task, such as:
 ### Evidence to submit
 
 - Screenshot of MCP setup
-- Screenshot showing Copilot using MCP context
+- Screenshot showing GitHub Copilot using MCP context
 - Link or screenshot of changed code or tests
 
 ### Approval criteria
@@ -569,7 +564,7 @@ Use MCP-backed context to complete one development task, such as:
 
 ---
 
-## Task 10 - Use Copilot agent workflow for a multi-file feature
+## Task 10 - Use GitHub Copilot agent workflow for a multi-file feature
 
 ### Objective
 Use agentic development to implement a complete feature across backend, frontend, and tests.
@@ -584,7 +579,7 @@ Select one feature, such as:
 - Project health export
 - Reviewer approval workflow
 
-Use Copilot Agent Mode or an approved agent workflow to plan and implement the feature.
+Use GitHub Copilot Agent Mode or an approved agent workflow to plan and implement the feature.
 
 The feature must include:
 
@@ -593,7 +588,7 @@ The feature must include:
 - Tests
 - Documentation update
 
-### Copilot focus
+### GitHub Copilot focus
 
 - Agents
 - Multi-file implementation
@@ -644,11 +639,11 @@ test-check: runs backend and frontend tests
 submission-check: confirms screenshots, prompt log, and docs are updated
 ```
 
-### Copilot focus
+### GitHub Copilot focus
 
-- Use Copilot to generate automation scripts.
-- Use Copilot to troubleshoot failing checks.
-- Use Copilot to improve validation scripts.
+- Use GitHub Copilot to generate automation scripts.
+- Use GitHub Copilot to troubleshoot failing checks.
+- Use GitHub Copilot to improve validation scripts.
 
 ### Deliverables
 
@@ -694,12 +689,12 @@ Final demo must show:
 5. Action assignment
 6. Role-based behavior
 7. Tests or quality-check evidence
-8. Copilot artifacts: instructions, prompts, skills, MCP, agents, hooks
+8. GitHub Copilot artifacts: instructions, prompts, skills, MCP, agents, hooks
 
-### Copilot focus
+### GitHub Copilot focus
 
-- Use Copilot to improve documentation.
-- Use Copilot to create demo script and reviewer checklist.
+- Use GitHub Copilot to improve documentation.
+- Use GitHub Copilot to create demo script and reviewer checklist.
 
 ### Deliverables
 
@@ -721,7 +716,7 @@ Final demo must show:
 - Application runs end to end.
 - Documentation is clear.
 - Demo is business-relevant.
-- All required Copilot concepts are demonstrated.
+- All required GitHub Copilot concepts are demonstrated.
 
 ---
 
@@ -775,7 +770,7 @@ Improve the Angular frontend for accessibility and performance.
 | Day | Focus | Expected checkpoint |
 |---|---|---|
 | Day 1 | Kickoff, team setup, architecture | Task 1 approved |
-| Day 2 | Copilot instructions, prompts, skills | Task 2 approved |
+| Day 2 | GitHub Copilot instructions, prompts, skills | Task 2 approved |
 | Day 3 | App scaffolding and local build | Task 3 approved |
 | Day 4 | Domain model and business rules | Task 4 approved |
 | Day 5 | Backend APIs | Task 5 approved |
@@ -800,7 +795,7 @@ Suggested agenda:
 
 1. First 10 minutes - common blockers and announcements
 2. Next 35 minutes - team-specific Q&A and troubleshooting
-3. Next 10 minutes - Copilot usage tips
+3. Next 10 minutes - GitHub Copilot usage tips
 4. Last 5 minutes - submission reminders and leaderboard update
 
 ---
@@ -813,7 +808,7 @@ Reviewers should check:
 - Is the business logic implemented in .NET?
 - Does the Angular UI call real APIs?
 - Are tests present and passing?
-- Are Copilot instructions, prompts, skills, agents, MCPs, and hooks demonstrated?
+- Are GitHub Copilot instructions, prompts, skills, agents, MCPs, and hooks demonstrated?
 - Are screenshots and prompt logs submitted after each task?
 - Is the final demo business-relevant for LTM?
 
@@ -828,5 +823,5 @@ A team is considered complete when:
 - Backend, frontend, and tests are included.
 - Local build, test, and quality checks pass.
 - The prompt log is complete.
-- Copilot instructions, prompts, skills, agents, MCPs, and hooks are visible in the submission.
+- GitHub Copilot instructions, prompts, skills, agents, MCPs, and hooks are visible in the submission.
 - Final demo and documentation are submitted.
