@@ -4,16 +4,11 @@
 
 ### Using GitHub Copilot and Azure AI Foundry
 
-**🏆 LTM GitHub Copilot Innovation Challenge**
+🏆 **LTM GitHub Copilot Innovation Challenge**
+
 ## 🚧 MegaBuild Command Center
 
 *Enterprise Multi-Agent Construction Operations Challenge*
-
-![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Chat%20%7C%20Coding%20Agent-8A2BE2?style=for-the-badge&logo=github)
-![Azure AI Foundry](https://img.shields.io/badge/Azure%20AI-Foundry-0078D4?style=for-the-badge&logo=microsoftazure)
-![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-00A67E?style=for-the-badge)
-![Agents](https://img.shields.io/badge/Agents-5%2B%20Specialized-FF6B00?style=for-the-badge)
-![Score](https://img.shields.io/badge/Total%20Score-100%20pts-FFD700?style=for-the-badge)
 
 </div>
 
@@ -219,9 +214,10 @@ The emphasis is:
 > [!NOTE]
 > Each task below is collapsible — click a task header to expand its details. ✨
 
-### Task 1: Business Scenario, Personas, and Agent Architecture
+<details open>
+<summary><b>🧭 Task 1: Business Scenario, Personas, and Agent Architecture</b></summary>
 
-**Objective:** Define the Construction Command Center solution.
+**🎯 Objective:** Define the Construction Command Center solution.
 
 **Activities:**
 
@@ -232,25 +228,28 @@ The emphasis is:
 - Create architecture diagram
 - Identify MCP context sources
 
-**GitHub Copilot focus:** Use GitHub Copilot Chat to:
+**💬 GitHub Copilot focus:** Use GitHub Copilot Chat to:
 
 - Generate architecture alternatives
 - Explore agent patterns
 - Refine solution scope
 
-**Deliverables:**
+**📦 Deliverables:**
 
 - `architecture.md`
 - `personas.md`
 - `solution-overview.md`
 
-### Task 2: GitHub Copilot Instructions, Prompts, Skills, and Agent Personas
+</details>
 
-**Objective:** Create reusable GitHub Copilot assets.
+<details>
+<summary><b>📝 Task 2: GitHub Copilot Instructions, Prompts, Skills, and Agent Personas</b></summary>
+
+**🎯 Objective:** Create reusable GitHub Copilot assets.
 
 **Activities:**
 
-#### Instructions
+#### 📐 Instructions
 
 Examples:
 
@@ -259,7 +258,7 @@ Examples:
 - Testing standards
 - Security standards
 
-#### Prompt Files
+#### 📄 Prompt Files
 
 Create a minimum of five:
 
@@ -269,7 +268,7 @@ Create a minimum of five:
 - `generate-tests.prompt.md`
 - `review-agent.prompt.md`
 
-#### Skills
+#### 🧩 Skills
 
 Create a minimum of three:
 
@@ -277,19 +276,22 @@ Create a minimum of three:
 - Prompt Engineer
 - Evaluation Specialist
 
-#### Agent Personas
+#### 🎭 Agent Personas
 
 Document each agent's role, goals, tools, and expected outputs.
 
-**GitHub Copilot focus:** Demonstrate:
+**💬 GitHub Copilot focus:** Demonstrate:
 
 - Custom Instructions
 - Prompt Files
 - Skills
 
-### Task 3: Create Azure AI Foundry Project
+</details>
 
-**Objective:** Create the AI development environment.
+<details>
+<summary><b>☁️ Task 3: Create Azure AI Foundry Project</b></summary>
+
+**🎯 Objective:** Create the AI development environment.
 
 **Activities:**
 
@@ -298,16 +300,19 @@ Document each agent's role, goals, tools, and expected outputs.
 - Configure agent environment
 - Document setup
 
-**Deliverables:**
+**📦 Deliverables:**
 
 - `foundry-setup.md`
 - Project screenshots
 
-**GitHub Copilot focus:** Use Copilot to generate setup guidance and validation steps.
+**💬 GitHub Copilot focus:** Use Copilot to generate setup guidance and validation steps.
 
-### Task 4: Build the Site Operations Agent
+</details>
 
-**Objective:** Implement the first specialized agent.
+<details>
+<summary><b>🏗️ Task 4: Build the Site Operations Agent</b></summary>
+
+**🎯 Objective:** Implement the first specialized agent.
 
 **Activities:**
 
@@ -316,15 +321,18 @@ Document each agent's role, goals, tools, and expected outputs.
 - Add project schedule context
 - Add project status retrieval capability
 
-**GitHub Copilot focus:** Use Coding Agent to generate:
+**💬 GitHub Copilot focus:** Use Coding Agent to generate:
 
 - Agent scaffolding
 - Prompts
 - Evaluation scenarios
 
-### Task 5: Build the Safety Compliance Agent
+</details>
 
-**Objective:** Create a safety-focused agent.
+<details>
+<summary><b>🦺 Task 5: Build the Safety Compliance Agent</b></summary>
+
+**🎯 Objective:** Create a safety-focused agent.
 
 **Activities:**
 
@@ -332,11 +340,14 @@ Document each agent's role, goals, tools, and expected outputs.
 - Create inspection workflows
 - Generate safety recommendations
 
-**GitHub Copilot focus:** Use Copilot Chat and Coding Agent for iterative development.
+**💬 GitHub Copilot focus:** Use Copilot Chat and Coding Agent for iterative development.
 
-### Task 6: Build the Construction Expert Agent and Risk Agent
+</details>
 
-**Objective:** Create expert discovery and risk analysis capabilities.
+<details>
+<summary><b>🧠 Task 6: Build the Construction Expert Agent and Risk Agent</b></summary>
+
+**🎯 Objective:** Create expert discovery and risk analysis capabilities.
 
 **Activities:**
 
@@ -345,11 +356,14 @@ Document each agent's role, goals, tools, and expected outputs.
 - Impact analysis
 - Mitigation recommendations
 
-**GitHub Copilot focus:** Use multi-file agent development workflows.
+**💬 GitHub Copilot focus:** Use multi-file agent development workflows.
 
-### Task 7: Build an MCP Server
+</details>
 
-**Objective:** Provide external context to agents.
+<details>
+<summary><b>🔌 Task 7: Build an MCP Server</b></summary>
+
+**🎯 Objective:** Provide external context to agents.
 
 **Activities:** Create or configure MCP to expose:
 
@@ -359,15 +373,18 @@ Document each agent's role, goals, tools, and expected outputs.
 - Safety documentation
 - Sample project records
 
-**GitHub Copilot focus:** Demonstrate:
+**💬 GitHub Copilot focus:** Demonstrate:
 
 - MCP configuration
 - Tool discovery
 - Context grounding
 
-### Task 8: Implement Multi-Agent Orchestration Using Agent Framework
+</details>
 
-**Objective:** Create the Command Center Orchestrator.
+<details>
+<summary><b>🔀 Task 8: Implement Multi-Agent Orchestration Using Agent Framework</b></summary>
+
+**🎯 Objective:** Create the Command Center Orchestrator.
 
 **Activities:** Implement:
 
@@ -376,11 +393,14 @@ Document each agent's role, goals, tools, and expected outputs.
 - Response aggregation
 - Multi-agent workflows
 
-**GitHub Copilot focus:** Use Coding Agent to implement orchestration across multiple files.
+**💬 GitHub Copilot focus:** Use Coding Agent to implement orchestration across multiple files.
 
-### Task 9: Agent Evaluation and Testing
+</details>
 
-**Objective:** Validate solution quality.
+<details>
+<summary><b>✅ Task 9: Agent Evaluation and Testing</b></summary>
+
+**🎯 Objective:** Validate solution quality.
 
 **Activities:** Create evaluations for:
 
@@ -390,16 +410,19 @@ Document each agent's role, goals, tools, and expected outputs.
 - Agent routing correctness
 - Response quality
 
-**Deliverables:**
+**📦 Deliverables:**
 
 - `evaluation-plan.md`
 - `test-results.md`
 
-**GitHub Copilot focus:** Use Copilot to generate evaluation cases and test scenarios.
+**💬 GitHub Copilot focus:** Use Copilot to generate evaluation cases and test scenarios.
 
-### Task 10: Use GitHub Copilot Coding Agent for an End-to-End Feature
+</details>
 
-**Objective:** Complete a feature using Agent Mode.
+<details>
+<summary><b>🚀 Task 10: Use GitHub Copilot Coding Agent for an End-to-End Feature</b></summary>
+
+**🎯 Objective:** Complete a feature using Agent Mode.
 
 **Examples:**
 
@@ -416,11 +439,14 @@ The feature must include:
 - Tests
 - Documentation
 
-**GitHub Copilot focus:** Demonstrate Coding Agent planning and implementation.
+**💬 GitHub Copilot focus:** Demonstrate Coding Agent planning and implementation.
 
-### Task 11: Hooks, Quality Gates, and Automation
+</details>
 
-**Objective:** Ensure production-quality development practices.
+<details>
+<summary><b>🛡️ Task 11: Hooks, Quality Gates, and Automation</b></summary>
+
+**🎯 Objective:** Ensure production-quality development practices.
 
 **Activities:** Implement:
 
@@ -430,52 +456,69 @@ The feature must include:
 - Quality gates
 - Local hooks
 
-**Deliverables:**
+**📦 Deliverables:**
 
 - Automation scripts
 - Quality checklist
 
-### Task 12: Executive Demo and Final Showcase
+</details>
 
-**Objective:** Demonstrate a complete Construction Command Center experience.
+<details>
+<summary><b>🎤 Task 12: Executive Demo and Final Showcase</b></summary>
+
+**🎯 Objective:** Demonstrate a complete Construction Command Center experience.
 
 **Required demo scenario:** A project manager asks:
 
-> Heavy rains have delayed runway excavation and water leakage has been reported near Terminal B. What should we do?
+> [!IMPORTANT]
+> *"Heavy rains have delayed runway excavation and water leakage has been reported near Terminal B. What should we do?"*
 
 The solution should demonstrate:
 
-1. The Orchestrator receives the request.
-2. The Site Operations Agent reviews schedules.
-3. The Risk Agent analyzes project impact.
-4. The Safety Agent reviews compliance requirements.
-5. The Expert Agent identifies specialists.
-6. The Orchestrator produces a consolidated action plan.
+1. 📥 The Orchestrator receives the request.
+2. 🏗️ The Site Operations Agent reviews schedules.
+3. ⚠️ The Risk Agent analyzes project impact.
+4. 🦺 The Safety Agent reviews compliance requirements.
+5. 🧠 The Expert Agent identifies specialists.
+6. 📤 The Orchestrator produces a consolidated action plan.
 
-## Leaderboard Scoring
+</details>
 
-| Category | Points |
-| --- | ---: |
-| GitHub Copilot Usage | 15 |
-| Prompt Engineering | 10 |
-| Skills and Instructions | 10 |
-| Agent Design | 15 |
-| Agent Framework Usage | 15 |
-| MCP Integration | 15 |
-| Azure AI Foundry Usage | 10 |
-| Evaluation and Testing | 5 |
-| Demo and Documentation | 5 |
-| **Total** | **100** |
+---
 
-## Definition of Done
+## 🏆 Leaderboard Scoring
+
+| Category | Points | Weight |
+| --- | :---: | --- |
+| 💬 GitHub Copilot Usage | **15** | 🟧🟧🟧 |
+| 📝 Prompt Engineering | **10** | 🟨🟨 |
+| 🧩 Skills and Instructions | **10** | 🟨🟨 |
+| 🤖 Agent Design | **15** | 🟧🟧🟧 |
+| 🔗 Agent Framework Usage | **15** | 🟧🟧🟧 |
+| 🔌 MCP Integration | **15** | 🟧🟧🟧 |
+| ☁️ Azure AI Foundry Usage | **10** | 🟨🟨 |
+| ✅ Evaluation and Testing | **5** | 🟩 |
+| 🎤 Demo and Documentation | **5** | 🟩 |
+| **🏁 Total** | **100** | |
+
+## ✅ Definition of Done
 
 A team is considered successful when:
 
-- All mandatory tasks are approved.
-- Azure AI Foundry is used.
-- At least four specialized agents are implemented.
-- MCP is integrated.
-- Agent Framework orchestration is demonstrated.
-- GitHub Copilot Instructions, Prompts, Skills, Agents, MCP, and Hooks are visible in the solution.
-- Evaluation results are documented.
+- [x] All mandatory tasks are approved.
+- [x] Azure AI Foundry is used.
+- [x] At least four specialized agents are implemented.
+- [x] MCP is integrated.
+- [x] Agent Framework orchestration is demonstrated.
+- [x] GitHub Copilot Instructions, Prompts, Skills, Agents, MCP, and Hooks are visible in the solution.
+- [x] Evaluation results are documented.
+- [x] The executive demo scenario runs successfully end-to-end.
+
+<div align="center">
+
+---
+
+### 🚀 Ready to build the future of construction operations? Let's go! 🏗️✨
+
+</div>
 - The executive demo scenario runs successfully end-to-end.
