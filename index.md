@@ -1,4 +1,8 @@
-
+---
+title: LTM GitHub Copilot Innovation Challenge
+description: Build. Innovate. Transform.
+theme: jekyll-theme-cayman
+---
 
 # Build an AI-Powered Construction Command Center
 
