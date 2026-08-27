@@ -147,49 +147,6 @@ The orchestrator should:
 <img width="1256" height="482" alt="image" src="https://github.com/user-attachments/assets/2f25a9c6-e4fe-4b0c-9c0f-1aee251c8171" />
 
 
-```mermaid
-flowchart TD
-    User("User") --> Orchestrator
-
-    subgraph Orchestration[" "]
-        Orchestrator["Command Center<br/>Orchestrator Agent"]
-    end
-
-    Orchestrator --> Safety["Safety Agent"]
-    Orchestrator --> Risk["Risk Agent"]
-    Orchestrator --> Expert["Expert Agent"]
-    Orchestrator --> SiteOps["Site Operations Agent"]
-
-    Safety --> MCP["MCP Servers"]
-    Risk --> MCP
-    Expert --> MCP
-    SiteOps --> MCP
-
-    MCP --> Manuals["Safety Manuals"]
-    MCP --> Standards["Construction Standards"]
-    MCP --> ProjectData["Project Data"]
-    MCP --> Contractors["Contractor Directory"]
-    MCP --> Experts["Expert Directory"]
-
-    Orchestrator --> Foundry["Azure AI Foundry"]
-    Foundry --> Models["Models"]
-    Foundry --> Agents["Agents"]
-    Foundry --> Evaluation["Evaluation"]
-    Foundry --> Monitoring["Monitoring"]
-
-    classDef orchestrator fill:#2F3A56,color:#fff,stroke:#1B2338,stroke-width:2px;
-    classDef agent fill:#5B6B8C,color:#fff,stroke:#3E4A63,stroke-width:1px;
-    classDef mcp fill:#8A97AD,color:#1B2338,stroke:#5B6B8C,stroke-width:1px;
-    classDef foundry fill:#B8C0D1,color:#1B2338,stroke:#8A97AD,stroke-width:1px;
-    classDef user fill:#E8EAEF,color:#1B2338,stroke:#8A97AD,stroke-width:1px;
-
-    class User user;
-    class Orchestrator orchestrator;
-    class Safety,Risk,Expert,SiteOps agent;
-    class MCP,Manuals,Standards,ProjectData,Contractors,Experts mcp;
-    class Foundry,Models,Agents,Evaluation,Monitoring foundry;
-```
-
 ## Suggested MCP Context Sources
 
 Each team should expose project context through MCP.
