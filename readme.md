@@ -1,4 +1,4 @@
-<div align="center">
+
 
 # Build an AI-Powered Construction Command Center
 
@@ -6,15 +6,11 @@
 
 **LTM GitHub Copilot Innovation Challenge**
 
-## MegaBuild Command Center
+## Contoso Command Center
 
 *Enterprise Multi-Agent Construction Operations Challenge*
 
-![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Chat%20%7C%20Coding%20Agent-2F3A56?style=flat-square)
-![Azure AI Foundry](https://img.shields.io/badge/Azure%20AI-Foundry-2F3A56?style=flat-square)
-![Score](https://img.shields.io/badge/Total%20Score-100%20pts-2F3A56?style=flat-square)
 
-</div>
 
 ---
 
@@ -34,7 +30,7 @@
 
 ## Business Scenario
 
-MegaBuild Constructions is building a new international airport terminal.
+Contoso Constructions is building a new international airport terminal.
 
 The project spans multiple construction zones, contractors, suppliers, architects, safety inspectors, and project managers.
 
