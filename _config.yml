@@ -1,11 +1,3 @@
-title: LTM GitHub Innovation Challenge
-description: Transform ideas into impactful solutions with GitHub Copilot
+title: LTM GitHub Copilot Innovation Challenge
+description: Build. Innovate. Transform.
 theme: minima
-
-plugins:
-  - jekyll-feed
-
-header_pages:
-  - challenge.md
-  - resources.md
-  - faq.md
