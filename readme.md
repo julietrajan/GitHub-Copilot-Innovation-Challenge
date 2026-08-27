@@ -1,4 +1,4 @@
-<div align="center">
+
 
 # Build an AI-Powered Construction Command Center
 
@@ -6,13 +6,10 @@
 
 **LTM GitHub Copilot Innovation Challenge**
 
-## MegaBuild Command Center
+## Contoso Command Center
 
 *Enterprise Multi-Agent Construction Operations Challenge*
 
-
-
-</div>
 
 ---
 
@@ -32,7 +29,7 @@
 
 ## Business Scenario
 
-MegaBuild Constructions is building a new international airport terminal.
+Contoso Constructions is building a new international airport terminal.
 
 The project spans multiple construction zones, contractors, suppliers, architects, safety inspectors, and project managers.
 
@@ -146,6 +143,9 @@ The orchestrator should:
 5. Generate a consolidated response.
 
 ## Recommended Architecture
+
+<img width="1256" height="482" alt="image" src="https://github.com/user-attachments/assets/2f25a9c6-e4fe-4b0c-9c0f-1aee251c8171" />
+
 
 ```mermaid
 flowchart TD
