@@ -1,12 +1,39 @@
-# Build an AI-Powered Construction Command Center Using GitHub Copilot and Azure AI Foundry
+<div align="center">
 
-## LTM GitHub Copilot Innovation Challenge
+# 🏗️ Build an AI-Powered Construction Command Center
 
-### MegaBuild Command Center
+### Using GitHub Copilot and Azure AI Foundry
 
-**Enterprise Multi-Agent Construction Operations Challenge**
+**🏆 LTM GitHub Copilot Innovation Challenge**
+## 🚧 MegaBuild Command Center
 
-## Business Scenario
+*Enterprise Multi-Agent Construction Operations Challenge*
+
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Chat%20%7C%20Coding%20Agent-8A2BE2?style=for-the-badge&logo=github)
+![Azure AI Foundry](https://img.shields.io/badge/Azure%20AI-Foundry-0078D4?style=for-the-badge&logo=microsoftazure)
+![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-00A67E?style=for-the-badge)
+![Agents](https://img.shields.io/badge/Agents-5%2B%20Specialized-FF6B00?style=for-the-badge)
+![Score](https://img.shields.io/badge/Total%20Score-100%20pts-FFD700?style=for-the-badge)
+
+</div>
+
+---
+
+## 📑 Table of Contents
+
+- [🧩 Business Scenario](#-business-scenario)
+- [🎯 Challenge Objective](#-challenge-objective)
+- [🤖 Required Agent Ecosystem](#-required-agent-ecosystem)
+- [🧭 Recommended Architecture](#-recommended-architecture)
+- [🔌 Suggested MCP Context Sources](#-suggested-mcp-context-sources)
+- [📦 Innovation Challenge Deliverables](#-innovation-challenge-deliverables)
+- [🗂️ Challenge Tasks](#️-challenge-tasks)
+- [🏆 Leaderboard Scoring](#-leaderboard-scoring)
+- [✅ Definition of Done](#-definition-of-done)
+
+---
+
+## 🧩 Business Scenario
 
 MegaBuild Constructions is building a new international airport terminal.
 
@@ -14,179 +41,183 @@ The project spans multiple construction zones, contractors, suppliers, architect
 
 Every day, teams must answer questions such as:
 
-- What activities are delayed?
-- What safety incidents require attention?
-- Which construction risks could impact project completion?
-- Which contractor owns an issue?
-- What inspections are pending?
-- Who is the best expert to help resolve a structural problem?
-- What actions should be prioritized today?
+- ⏱️ What activities are delayed?
+- 🚨 What safety incidents require attention?
+- ⚠️ Which construction risks could impact project completion?
+- 👷 Which contractor owns an issue?
+- 📋 What inspections are pending?
+- 🧠 Who is the best expert to help resolve a structural problem?
+- 🎯 What actions should be prioritized today?
 
 Currently, information is spread across project reports, inspection documents, schedules, safety manuals, contractor records, and knowledge bases.
 
-Leadership wants an AI-powered Construction Command Center that can reason across multiple information sources and coordinate specialized AI agents to deliver timely, actionable insights.
+> [!IMPORTANT]
+> Leadership wants an **AI-powered Construction Command Center** that can reason across multiple information sources and coordinate specialized AI agents to deliver timely, actionable insights.
 
-## Challenge Objective
+## 🎯 Challenge Objective
 
 Design and build an enterprise AI agent ecosystem that helps construction teams:
 
-- Discover project information
-- Investigate site issues
-- Identify risks
-- Find subject matter experts
-- Recommend mitigation actions
-- Summarize construction status
-- Coordinate information across multiple specialized agents
+- 🔍 Discover project information
+- 🕵️ Investigate site issues
+- ⚠️ Identify risks
+- 🧠 Find subject matter experts
+- 🩹 Recommend mitigation actions
+- 📊 Summarize construction status
+- 🔗 Coordinate information across multiple specialized agents
 
 The solution must demonstrate modern AI engineering practices using:
 
-- GitHub Copilot Chat
-- GitHub Copilot Coding Agent
-- Custom Instructions
-- Prompt Files
-- Skills
-- MCP (Model Context Protocol)
-- Azure AI Foundry
-- Agent Framework
-- Multi-Agent Orchestration
-- Hooks and Quality Gates
-- Agent Evaluation and Testing
+| 🛠️ Practice | 🛠️ Practice |
+| --- | --- |
+| 💬 GitHub Copilot Chat | 🧠 Custom Instructions |
+| 🤖 GitHub Copilot Coding Agent | 📄 Prompt Files |
+| 🧩 Skills | 🔌 MCP (Model Context Protocol) |
+| ☁️ Azure AI Foundry | 🕸️ Agent Framework |
+| 🔀 Multi-Agent Orchestration | 🛡️ Hooks and Quality Gates |
+| ✅ Agent Evaluation and Testing | |
 
-## Required Agent Ecosystem
+## 🤖 Required Agent Ecosystem
 
 Every team must build the following agents.
 
-### Site Operations Agent
+### 🏗️ Site Operations Agent
 
 **Responsible for:**
 
-- Project status lookup
-- Schedule review
-- Milestone tracking
-- Site progress summaries
+- 📌 Project status lookup
+- 🗓️ Schedule review
+- 🚩 Milestone tracking
+- 📈 Site progress summaries
 
-**Example questions:**
+> 💬 *"What activities are delayed in Terminal A?"*
+> 💬 *"Which milestones are due this week?"*
 
-- What activities are delayed in Terminal A?
-- Which milestones are due this week?
-
-### Safety Compliance Agent
+### 🦺 Safety Compliance Agent
 
 **Responsible for:**
 
-- Safety regulations
-- Incident review
-- Inspection guidance
-- Hazard recommendations
+- 📜 Safety regulations
+- 🚨 Incident review
+- 🔎 Inspection guidance
+- ⚠️ Hazard recommendations
 
-**Example questions:**
+> 💬 *"What actions are required after a scaffolding safety incident?"*
+> 💬 *"What PPE is required for working at height?"*
 
-- What actions are required after a scaffolding safety incident?
-- What PPE is required for working at height?
-
-### Construction Expert Agent
+### 🧠 Construction Expert Agent
 
 **Responsible for:**
 
-- Identifying specialists
-- Recommending experts
-- Locating previous project experience
+- 🧑‍🔬 Identifying specialists
+- 🌟 Recommending experts
+- 📚 Locating previous project experience
 
-**Example questions:**
+> 💬 *"Who can help investigate structural concrete cracking?"*
+> 💬 *"Which team has experience with runway drainage systems?"*
 
-- Who can help investigate structural concrete cracking?
-- Which team has experience with runway drainage systems?
-
-### Risk Analysis Agent
+### ⚠️ Risk Analysis Agent
 
 **Responsible for:**
 
-- Identifying risks
-- Predicting schedule impacts
-- Recommending mitigations
-- Escalation recommendations
+- 🕵️ Identifying risks
+- 📉 Predicting schedule impacts
+- 🩹 Recommending mitigations
+- 📢 Escalation recommendations
 
-**Example questions:**
+> 💬 *"What risks could delay Terminal B completion?"*
+> 💬 *"Which risks should leadership review today?"*
 
-- What risks could delay Terminal B completion?
-- Which risks should leadership review today?
-
-### Command Center Orchestrator Agent
+### 🎯 Command Center Orchestrator Agent
 
 **Responsible for:**
 
-- Receiving user requests
-- Routing requests to specialized agents
-- Combining responses
-- Producing a final answer
+- 📥 Receiving user requests
+- 🔀 Routing requests to specialized agents
+- 🧵 Combining responses
+- 📤 Producing a final answer
 
-**Example question:**
-
-> We discovered water leakage in the basement. What should we do?
+> [!NOTE]
+> **Example:** *"We discovered water leakage in the basement. What should we do?"*
 
 The orchestrator should:
 
-1. Query the Risk Agent.
-2. Query the Safety Agent.
-3. Query the Expert Agent.
-4. Query the Site Operations Agent.
-5. Generate a consolidated response.
+1. ⚠️ Query the Risk Agent.
+2. 🦺 Query the Safety Agent.
+3. 🧠 Query the Expert Agent.
+4. 🏗️ Query the Site Operations Agent.
+5. 📤 Generate a consolidated response.
 
-## Recommended Architecture
+## 🧭 Recommended Architecture
 
 ```mermaid
 flowchart TD
-    User --> Orchestrator[Command Center Orchestrator Agent]
-    Orchestrator --> Safety[Safety Agent]
-    Orchestrator --> Risk[Risk Agent]
-    Orchestrator --> Expert[Expert Agent]
-    Orchestrator --> SiteOps[Site Operations Agent]
-    Safety --> MCP[MCP Servers]
+    User("🧑‍💼 User") --> Orchestrator
+
+    subgraph Orchestration[" "]
+        Orchestrator["🎯 Command Center<br/>Orchestrator Agent"]
+    end
+
+    Orchestrator --> Safety["🦺 Safety Agent"]
+    Orchestrator --> Risk["⚠️ Risk Agent"]
+    Orchestrator --> Expert["🧠 Expert Agent"]
+    Orchestrator --> SiteOps["🏗️ Site Operations Agent"]
+
+    Safety --> MCP["🔌 MCP Servers"]
     Risk --> MCP
     Expert --> MCP
     SiteOps --> MCP
-    MCP --> Manuals[Safety Manuals]
-    MCP --> Standards[Construction Standards]
-    MCP --> ProjectData[Project Data]
-    MCP --> Contractors[Contractor Directory]
-    MCP --> Experts[Expert Directory]
-    Orchestrator --> Foundry[Azure AI Foundry]
-    Foundry --> Models
-    Foundry --> Agents
-    Foundry --> Evaluation
-    Foundry --> Monitoring
+
+    MCP --> Manuals["📘 Safety Manuals"]
+    MCP --> Standards["📐 Construction Standards"]
+    MCP --> ProjectData["🗂️ Project Data"]
+    MCP --> Contractors["👷 Contractor Directory"]
+    MCP --> Experts["🌟 Expert Directory"]
+
+    Orchestrator --> Foundry["☁️ Azure AI Foundry"]
+    Foundry --> Models["🧬 Models"]
+    Foundry --> Agents["🤖 Agents"]
+    Foundry --> Evaluation["✅ Evaluation"]
+    Foundry --> Monitoring["📊 Monitoring"]
+
+    classDef orchestrator fill:#FF6B00,color:#fff,stroke:#B34700,stroke-width:2px;
+    classDef agent fill:#0078D4,color:#fff,stroke:#004C87,stroke-width:2px;
+    classDef mcp fill:#00A67E,color:#fff,stroke:#00614A,stroke-width:2px;
+    classDef foundry fill:#8A2BE2,color:#fff,stroke:#5A1B94,stroke-width:2px;
+    classDef user fill:#FFD700,color:#333,stroke:#B8A000,stroke-width:2px;
+
+    class User user;
+    class Orchestrator orchestrator;
+    class Safety,Risk,Expert,SiteOps agent;
+    class MCP,Manuals,Standards,ProjectData,Contractors,Experts mcp;
+    class Foundry,Models,Agents,Evaluation,Monitoring foundry;
 ```
 
-## Suggested MCP Context Sources
+## 🔌 Suggested MCP Context Sources
 
 Each team should expose project context through MCP.
 
 Examples include:
 
-- Construction standards
-- Safety manuals
-- Building codes
-- Project schedules
-- Contractor directory
-- Site issue logs
-- Construction glossary
-- Expert directory
-- Lessons learned repository
+| | | |
+| --- | --- | --- |
+| 📐 Construction standards | 📘 Safety manuals | 🏛️ Building codes |
+| 🗓️ Project schedules | 👷 Contractor directory | 🗒️ Site issue logs |
+| 📖 Construction glossary | 🌟 Expert directory | 🎓 Lessons learned repository |
 
-## Innovation Challenge Deliverables
+## 📦 Innovation Challenge Deliverables
 
-Teams should focus on building an intelligent agent solution rather than a traditional CRUD application.
+> [!TIP]
+> Teams should focus on building an **intelligent agent solution** rather than a traditional CRUD application.
 
 The emphasis is:
 
-- Agent Design
-- Agent Collaboration
-- AI Reasoning
-- MCP Integration
-- Foundry Usage
-- GitHub Copilot Assisted Development
+🧠 Agent Design · 🤝 Agent Collaboration · 💡 AI Reasoning · 🔌 MCP Integration · ☁️ Foundry Usage · 💻 GitHub Copilot Assisted Development
 
-## Challenge Tasks
+## 🗂️ Challenge Tasks
+
+> [!NOTE]
+> Each task below is collapsible — click a task header to expand its details. ✨
 
 ### Task 1: Business Scenario, Personas, and Agent Architecture
 
