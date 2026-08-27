@@ -1,32 +1,37 @@
 ---
-layout: home
-title: LTM GitHub Innovation Challenge
+layout: default
+title: LTM GitHub Copilot Innovation Challenge
 ---
 
-# 🚀 LTM GitHub Innovation Challenge
+# 🚀 LTM GitHub Copilot Innovation Challenge
+
+## Build. Innovate. Transform.
 
 Welcome to the LTM GitHub Innovation Challenge.
 
-## Objective
+### Challenge Themes
 
-Leverage GitHub Copilot, GitHub Pages, and AI-powered development to create innovative solutions that improve productivity, learning, or customer impact.
+✅ Copilot Solutions  
+✅ Trainer Productivity  
+✅ Learning Innovation  
+✅ AI-Powered Experiences  
 
-## Key Dates
+## Timeline
 
-| Milestone | Date |
-|------------|------|
-| Registration Opens | TBD |
-| Submission Deadline | TBD |
-| Judging | TBD |
-| Winners Announced | TBD |
+| Activity | Date |
+|-----------|------|
+| Registration | September 2026 |
+| Development Sprint | October 2026 |
+| Final Submission | November 2026 |
+| Winners Announcement | November 2026 |
 
-## Challenge Tracks
+## Resources
 
-- AI Productivity
-- Learning & Skilling
-- Customer Innovation
-- Internal Process Automation
+- GitHub Copilot
+- GitHub Pages
+- Actions
+- AI Development Best Practices
 
-## Get Started
+### Ready to innovate?
 
-Visit the Resources section to access templates, guidance, and starter projects.
+Start building your next big idea today!
