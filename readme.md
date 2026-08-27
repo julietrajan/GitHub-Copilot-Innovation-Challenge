@@ -1,3 +1,8 @@
+---
+title: GitHub Copilot Innovation Challenge
+layout: default
+---
+
 <div align="center">
 
 # 🏗️ Build an AI-Powered Construction Command Center
@@ -9,6 +14,7 @@
 ## 🚧 MegaBuild Command Center
 
 *Enterprise Multi-Agent Construction Operations Challenge*
+
 
 </div>
 
@@ -521,4 +527,4 @@ A team is considered successful when:
 ### 🚀 Ready to build the future of construction operations? Let's go! 🏗️✨
 
 </div>
-- The executive demo scenario runs successfully end-to-end.
+
