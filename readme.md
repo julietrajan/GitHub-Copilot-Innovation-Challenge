@@ -1,827 +1,450 @@
-# LTM GitHub Copilot Innovation Challenge
+# Build an AI-Powered Construction Command Center Using GitHub Copilot and Azure AI Foundry
 
-## DeliveryPulse - Project Delivery Risk and Action Tracker
+## LTM GitHub Copilot Innovation Challenge
 
-### Problem statement
-LTM delivery teams manage multiple client projects, milestones, risks, blockers, and action owners. Leadership needs early visibility into delivery risk, while project teams need a simple way to capture issues, track actions, and show progress.
+### MegaBuild Command Center
 
-In this hackathon, each team will build **DeliveryPulse**, an end-to-end enterprise application using:
+**Enterprise Multi-Agent Construction Operations Challenge**
 
-- **.NET Web API** for business logic, APIs, validation, risk scoring, data access, and tests
-- **Angular** for the frontend dashboard and user workflows
-- **GitHub Copilot-assisted development concepts** including instructions, prompts, skills, agents, MCPs, and hooks
-- **Task-based submissions** through the approved submission form after each milestone
+## Business Scenario
 
-By the end, each team should have a working application that demonstrates software design, implementation, testing, quality gates, and responsible GitHub Copilot-assisted development.
+MegaBuild Constructions is building a new international airport terminal.
 
----
+The project spans multiple construction zones, contractors, suppliers, architects, safety inspectors, and project managers.
 
-## Application scope
+Every day, teams must answer questions such as:
 
-### Core personas
+- What activities are delayed?
+- What safety incidents require attention?
+- Which construction risks could impact project completion?
+- Which contractor owns an issue?
+- What inspections are pending?
+- Who is the best expert to help resolve a structural problem?
+- What actions should be prioritized today?
 
-1. **Delivery Manager** - views project health, risks, blockers, and escalations.
-2. **Project Lead** - creates projects, updates milestones, assigns actions, and tracks blockers.
-3. **Engineer** - updates assigned actions and adds progress notes.
-4. **Reviewer/Admin** - reviews quality, approves closure, and audits changes.
+Currently, information is spread across project reports, inspection documents, schedules, safety manuals, contractor records, and knowledge bases.
 
-### Core modules
+Leadership wants an AI-powered Construction Command Center that can reason across multiple information sources and coordinate specialized AI agents to deliver timely, actionable insights.
 
-1. Project intake and project list
-2. Milestone tracking
-3. Risk and blocker management
-4. Action item assignment and status tracking
-5. Risk scoring engine in .NET
-6. Dashboard in Angular
-7. Role-based views
-8. Audit history
-9. Unit, integration, frontend, and end-to-end tests
-10. Local quality checks and automation hooks
+## Challenge Objective
 
----
+Design and build an enterprise AI agent ecosystem that helps construction teams:
 
-## Suggested technical stack
+- Discover project information
+- Investigate site issues
+- Identify risks
+- Find subject matter experts
+- Recommend mitigation actions
+- Summarize construction status
+- Coordinate information across multiple specialized agents
 
-| Layer | Recommended technology |
-|---|---|
-| Backend | .NET 8 or later, ASP.NET Core Web API |
-| Business logic | Domain services, validators, risk scoring rules |
-| Data | EF Core with SQLite or SQL Server LocalDB |
-| API docs | Swagger/OpenAPI |
-| Frontend | Angular 18 or later |
-| UI | Angular Material or Bootstrap |
-| Backend tests | xUnit, FluentAssertions, Moq or NSubstitute |
-| Frontend tests | Jasmine/Karma or Jest |
-| E2E tests | Playwright or Cypress |
-| Quality automation | Local scripts for build, lint, format, and tests |
-| GitHub Copilot context | Team instructions, reusable prompts, skills, agent workflows, MCP configuration |
+The solution must demonstrate modern AI engineering practices using:
 
----
+- GitHub Copilot Chat
+- GitHub Copilot Coding Agent
+- Custom Instructions
+- Prompt Files
+- Skills
+- MCP (Model Context Protocol)
+- Azure AI Foundry
+- Agent Framework
+- Multi-Agent Orchestration
+- Hooks and Quality Gates
+- Agent Evaluation and Testing
 
-## Suggested project folder structure
+## Required Agent Ecosystem
 
-```text
-DeliveryPulse
-├── src
-│   ├── api
-│   │   └── DeliveryPulse.Api
-│   └── web
-│       └── delivery-pulse-web
-├── tests
-│   ├── DeliveryPulse.Api.Tests
-│   └── delivery-pulse-web-e2e
-├── docs
-│   ├── architecture.md
-│   ├── prompt-log.md
-│   ├── test-strategy.md
-│   └── demo-script.md
-├── tools
-│   ├── mcp
-│   └── quality
-├── GitHub
-│   ├── instructions.md
-│   ├── prompts
-│   ├── skills
-│   └── agents
-└── submissions
+Every team must build the following agents.
+
+### Site Operations Agent
+
+**Responsible for:**
+
+- Project status lookup
+- Schedule review
+- Milestone tracking
+- Site progress summaries
+
+**Example questions:**
+
+- What activities are delayed in Terminal A?
+- Which milestones are due this week?
+
+### Safety Compliance Agent
+
+**Responsible for:**
+
+- Safety regulations
+- Incident review
+- Inspection guidance
+- Hazard recommendations
+
+**Example questions:**
+
+- What actions are required after a scaffolding safety incident?
+- What PPE is required for working at height?
+
+### Construction Expert Agent
+
+**Responsible for:**
+
+- Identifying specialists
+- Recommending experts
+- Locating previous project experience
+
+**Example questions:**
+
+- Who can help investigate structural concrete cracking?
+- Which team has experience with runway drainage systems?
+
+### Risk Analysis Agent
+
+**Responsible for:**
+
+- Identifying risks
+- Predicting schedule impacts
+- Recommending mitigations
+- Escalation recommendations
+
+**Example questions:**
+
+- What risks could delay Terminal B completion?
+- Which risks should leadership review today?
+
+### Command Center Orchestrator Agent
+
+**Responsible for:**
+
+- Receiving user requests
+- Routing requests to specialized agents
+- Combining responses
+- Producing a final answer
+
+**Example question:**
+
+> We discovered water leakage in the basement. What should we do?
+
+The orchestrator should:
+
+1. Query the Risk Agent.
+2. Query the Safety Agent.
+3. Query the Expert Agent.
+4. Query the Site Operations Agent.
+5. Generate a consolidated response.
+
+## Recommended Architecture
+
+```mermaid
+flowchart TD
+    User --> Orchestrator[Command Center Orchestrator Agent]
+    Orchestrator --> Safety[Safety Agent]
+    Orchestrator --> Risk[Risk Agent]
+    Orchestrator --> Expert[Expert Agent]
+    Orchestrator --> SiteOps[Site Operations Agent]
+    Safety --> MCP[MCP Servers]
+    Risk --> MCP
+    Expert --> MCP
+    SiteOps --> MCP
+    MCP --> Manuals[Safety Manuals]
+    MCP --> Standards[Construction Standards]
+    MCP --> ProjectData[Project Data]
+    MCP --> Contractors[Contractor Directory]
+    MCP --> Experts[Expert Directory]
+    Orchestrator --> Foundry[Azure AI Foundry]
+    Foundry --> Models
+    Foundry --> Agents
+    Foundry --> Evaluation
+    Foundry --> Monitoring
 ```
 
----
+## Suggested MCP Context Sources
 
-## Innovation challenge format and guidelines
+Each team should expose project context through MCP.
 
-### Team rules
+Examples include:
 
-- Participants work in **groups of 3-5 learners**.
-- Each group must choose a team name.
-- Each task must be completed as a separate milestone.
-- Teams must submit evidence after every task and wait for approval before moving to the next task.
-- Teams can attend office hours for blockers, design reviews, GitHub Copilot usage guidance, and code review support.
-- Teams should maintain their solution folder carefully and NOT to submit anywhere.
+- Construction standards
+- Safety manuals
+- Building codes
+- Project schedules
+- Contractor directory
+- Site issue logs
+- Construction glossary
+- Expert directory
+- Lessons learned repository
 
-### Submission rule after every task
+## Innovation Challenge Deliverables
 
-After completing each task, submit the following through the hackathon form:
+Teams should focus on building an intelligent agent solution rather than a traditional CRUD application.
 
-1. Team name
-2. Task number
-3. Shared solution folder link or packaged submission link
-4. Screenshot of working output
-5. Screenshot of test result or quality check result, where applicable
-6. Link or screenshot of the updated `docs/prompt-log.md`
-7. Short note on what GitHub Copilot capability was used
-8. Blockers, assumptions, or reviewer questions
+The emphasis is:
 
-### Approval rule
+- Agent Design
+- Agent Collaboration
+- AI Reasoning
+- MCP Integration
+- Foundry Usage
+- GitHub Copilot Assisted Development
 
-- Trainers/reviewers will approve or request changes.
-- Teams must not start the next task until the previous task is approved.
-- If changes are requested, update the task deliverables and resubmit evidence.
+## Challenge Tasks
 
----
+### Task 1: Business Scenario, Personas, and Agent Architecture
 
-## Leaderboard scoring
+**Objective:** Define the Construction Command Center solution.
 
-| Category | Points |
-|---|---:|
-| Task completion | 30 |
-| Code quality and maintainability | 15 |
-| Business relevance | 15 |
-| Test coverage and validation | 15 |
-| Effective use of GitHub Copilot concepts | 15 |
-| Demo quality and documentation | 10 |
-| **Total** | **100** |
+**Activities:**
 
-Bonus points may be awarded for:
+- Define business goals
+- Define user personas
+- Identify agent responsibilities
+- Design orchestration flow
+- Create architecture diagram
+- Identify MCP context sources
 
-- Clean deployment or demo environment
-- Strong accessibility support
-- High-quality test automation
-- Meaningful use of MCP or agent workflows
-- Excellent documentation and prompt discipline
+**GitHub Copilot focus:** Use GitHub Copilot Chat to:
 
----
+- Generate architecture alternatives
+- Explore agent patterns
+- Refine solution scope
 
-# Hackathon tasks
+**Deliverables:**
 
-## Task 1 - Team setup, backlog, and solution blueprint
+- `architecture.md`
+- `personas.md`
+- `solution-overview.md`
 
-### Objective
-Set up the team workspace and define the solution architecture, personas, user stories, and backlog.
+### Task 2: GitHub Copilot Instructions, Prompts, Skills, and Agent Personas
 
-### Activities
+**Objective:** Create reusable GitHub Copilot assets.
 
-- Create the team solution folder.
-- Add team details in `README.md`.
-- Create `docs/architecture.md`.
-- Define personas, user journeys, and core modules.
-- Create at least 10 user stories in `docs/backlog.md`.
-- Create a task tracker in Excel, Planner, Teams Loop, or another organizer-approved tool.
+**Activities:**
 
-  ### Deliverables
+#### Instructions
 
-- Updated `README.md`
-- `docs/architecture.md`
-- `docs/backlog.md`
-- Team task tracker
+Examples:
 
-### Evidence to submit
+- Agent development standards
+- Prompt design standards
+- Testing standards
+- Security standards
 
-- Screenshot of solution folder structure
-- Screenshot of backlog or task tracker
-- Link or screenshot of prompt log entry
+#### Prompt Files
 
-### Approval criteria
+Create a minimum of five:
 
-- Architecture is clear.
-- User stories are relevant to DeliveryPulse.
-- Team workspace is ready for implementation.
+- `create-agent.prompt.md`
+- `create-tool.prompt.md`
+- `evaluate-agent.prompt.md`
+- `generate-tests.prompt.md`
+- `review-agent.prompt.md`
 
----
+#### Skills
 
-## Task 2 - Add GitHub Copilot instructions, reusable prompts, and team skills
+Create a minimum of three:
 
-### Objective
-Create shared GitHub Copilot guidance so all team members generate code consistently.
+- Agent Architect
+- Prompt Engineer
+- Evaluation Specialist
 
-### Activities
+#### Agent Personas
 
-- Create `github/instructions.md` with coding standards.
-- Add backend standards for .NET APIs, services, validation, error handling, and testing.
-- Add frontend standards for Angular components, services, routing, forms, and tests.
-- Create reusable prompt files in `github/prompts`, for example:
-  - `design-api.prompt.md`
-  - `generate-angular-component.prompt.md`
-  - `write-unit-tests.prompt.md`
-  - `security-review.prompt.md`
-  - `refactor-code.prompt.md`
-- Create team skill files in `github/skills`, for example:
-  - `dotnet-architect.md`
-  - `angular-reviewer.md`
-  - `test-engineer.md`
+Document each agent's role, goals, tools, and expected outputs.
 
-### GitHub Copilot focus
+**GitHub Copilot focus:** Demonstrate:
 
-- Instructions
+- Custom Instructions
+- Prompt Files
+- Skills
+
+### Task 3: Create Azure AI Foundry Project
+
+**Objective:** Create the AI development environment.
+
+**Activities:**
+
+- Create Foundry Project
+- Configure model
+- Configure agent environment
+- Document setup
+
+**Deliverables:**
+
+- `foundry-setup.md`
+- Project screenshots
+
+**GitHub Copilot focus:** Use Copilot to generate setup guidance and validation steps.
+
+### Task 4: Build the Site Operations Agent
+
+**Objective:** Implement the first specialized agent.
+
+**Activities:**
+
+- Define system prompt
+- Create tools
+- Add project schedule context
+- Add project status retrieval capability
+
+**GitHub Copilot focus:** Use Coding Agent to generate:
+
+- Agent scaffolding
 - Prompts
-- Skills or reusable role-based workflows
+- Evaluation scenarios
 
-### Deliverables
+### Task 5: Build the Safety Compliance Agent
 
-- `GitHub Copilot/instructions.md`
-- At least 5 prompt files
-- At least 2 reusable skill files
+**Objective:** Create a safety-focused agent.
 
-### Evidence to submit
+**Activities:**
 
-- Screenshot of `github` folder
-- Screenshot showing GitHub Copilot using one instruction or prompt file
+- Connect safety context
+- Create inspection workflows
+- Generate safety recommendations
 
-### Approval criteria
+**GitHub Copilot focus:** Use Copilot Chat and Coding Agent for iterative development.
 
-- Instructions are specific to this application.
-- Prompt files are reusable and aligned to the application.
-- Skills have clear roles and expected outputs.
+### Task 6: Build the Construction Expert Agent and Risk Agent
 
----
+**Objective:** Create expert discovery and risk analysis capabilities.
 
-## Task 3 - Scaffold .NET API, Angular app, and baseline build scripts
+**Activities:**
 
-### Objective
-Create the technical foundation for the full-stack application.
+- Expert lookup
+- Risk identification
+- Impact analysis
+- Mitigation recommendations
 
-### Activities
+**GitHub Copilot focus:** Use multi-file agent development workflows.
 
-- Create the .NET Web API project under `src/api/DeliveryPulse.Api`.
-- Create the Angular application under `src/web/delivery-pulse-web`.
-- Add Swagger/OpenAPI to the backend.
-- Add a health check endpoint: `GET /api/health`.
-- Add Angular shell with routes for Dashboard, Projects, Risks, Actions, and Admin.
-- Add local build scripts for backend and frontend.
+### Task 7: Build an MCP Server
 
-### GitHub Copilot focus
+**Objective:** Provide external context to agents.
 
-- Use GitHub Copilot to scaffold multi-file changes.
-- Use prompt files from Task 2.
+**Activities:** Create or configure MCP to expose:
 
-### Deliverables
+- Contractor directory
+- Expert directory
+- Construction glossary
+- Safety documentation
+- Sample project records
 
-- Working .NET API
-- Working Angular shell
-- Local build scripts
-
-### Evidence to submit
-
-- Screenshot of Swagger page
-- Screenshot of Angular home page
-- Screenshot of successful local build
-
-### Approval criteria
-
-- Backend and frontend both run locally.
-- Build scripts work.
-- Application structure follows the agreed architecture.
-
----
-
-## Task 4 - Implement domain model and business rules
-
-### Objective
-Build the core business logic for project delivery risk tracking.
-
-### Activities
-
-Create domain models such as:
-
-- `Project`
-- `Milestone`
-- `Risk`
-- `ActionItem`
-- `TeamMember`
-- `AuditEntry`
-
-Implement business rules such as:
-
-- Risk score is calculated from impact, probability, due date, and blocker status.
-- A project becomes `At Risk` when high-severity risks are open.
-- A milestone becomes `Delayed` when due date has passed and status is incomplete.
-- An action item cannot be closed without a resolution note.
-
-### GitHub Copilot focus
-
-- Use GitHub Copilot to generate domain models and validators.
-- Use GitHub Copilot to explain generated code before submission.
-
-### Deliverables
-
-- Domain entities
-- Business services
-- Validation logic
-- Seed data
-
-### Evidence to submit
-
-- Screenshot of domain model files
-- Screenshot of seeded data or API response
-- Prompt log entry showing how GitHub Copilot helped design rules
-
-### Approval criteria
-
-- Business logic is implemented in .NET, not only in the UI.
-- Risk scoring is testable and clearly separated from controllers.
-- Validation rules are meaningful.
-
----
-
-## Task 5 - Build backend APIs and data access
-
-### Objective
-Expose the application features through clean REST APIs.
-
-### Activities
-
-Implement API endpoints for:
-
-- Projects
-- Milestones
-- Risks
-- Action items
-- Dashboard summary
-- Audit history
-
-Minimum API examples:
-
-```text
-GET    /api/projects
-POST   /api/projects
-GET    /api/projects/{id}
-PUT    /api/projects/{id}
-GET    /api/projects/{id}/risks
-POST   /api/projects/{id}/risks
-PUT    /api/risks/{id}/status
-GET    /api/dashboard/summary
-```
-
-Add:
-
-- EF Core persistence
-- DTOs and mapping
-- Centralized error handling
-- Request validation
-- Swagger examples
-
-### GitHub Copilot focus
-
-- Use prompts for API design and controller generation.
-- Use GitHub Copilot to generate API examples and error handling patterns.
-
-### Deliverables
-
-- REST APIs
-- Data persistence
-- Swagger documentation
-
-### Evidence to submit
-
-- Screenshot of Swagger endpoints
-- Screenshot of API response with sample data
-
-### Approval criteria
-
-- APIs follow REST conventions.
-- Business logic is not duplicated in controllers.
-- Error responses are consistent.
-
----
-
-## Task 6 - Build Angular dashboard and core user flows
-
-### Objective
-Create the user interface for project delivery tracking.
-
-### Activities
-
-Build Angular screens for:
-
-- Dashboard summary cards
-- Project list
-- Project details
-- Risk list and risk creation form
-- Action item list and status update
-- Milestone view
-
-The dashboard should show:
-
-- Total projects
-- Projects at risk
-- Open high-severity risks
-- Overdue actions
-- Upcoming milestones
-
-### GitHub Copilot focus
-
-- Use GitHub Copilot to generate Angular components, services, and reactive forms.
-- Use reusable frontend prompt files.
-
-### Deliverables
-
-- Angular routes and components
-- API integration services
-- Forms with validation
-- Basic responsive layout
-
-### Evidence to submit
-
-- Screenshot of dashboard
-- Screenshot of project detail page
-- Screenshot of risk creation form
-
-### Approval criteria
-
-- UI calls real backend APIs.
-- Forms validate user input.
-- Screens are usable and business-friendly.
-
----
-
-## Task 7 - Add authentication, roles, audit, and error handling
-
-### Objective
-Add enterprise-style controls and traceability.
-
-### Activities
-
-- Add simple authentication or mock login.
-- Implement roles:
-  - Delivery Manager
-  - Project Lead
-  - Engineer
-  - Admin
-- Restrict actions based on role.
-- Add audit entries when risks or action items are created, updated, or closed.
-- Add frontend error handling and user notifications.
-
-### GitHub Copilot focus
-
-- Use GitHub Copilot to identify authorization gaps.
-- Use a security-review prompt before submitting.
-
-### Deliverables
-
-- Role-based access behavior
-- Audit history
-- Error handling pattern
-
-### Evidence to submit
-
-- Screenshot of role-based screen behavior
-- Screenshot of audit history
-- Screenshot or copied output from security-review prompt
-
-### Approval criteria
-
-- Role behavior is visible.
-- Audit entries are created for important actions.
-- Errors are handled gracefully.
-
----
-
-## Task 8 - Add unit, integration, frontend, and end-to-end tests
-
-### Objective
-Prove that the application works and that GitHub Copilot-generated code is validated.
-
-### Activities
-
-Add tests for:
-
-- Risk scoring business rules
-- Validators
-- API endpoints
-- Angular services
-- Angular components
-- One end-to-end flow, such as creating a project and adding a risk
-
-Minimum expectations:
-
-- Backend unit tests for domain services
-- Backend API integration tests
-- Frontend component or service tests
-- One E2E test
-
-### GitHub Copilot focus
-
-- Use GitHub Copilot to generate test cases from acceptance criteria.
-- Use GitHub Copilot to find missing edge cases.
-
-### Deliverables
-
-- Test projects
-- Test data builders or fixtures
-- Test execution scripts
-
-### Evidence to submit
-
-- Screenshot of backend test results
-- Screenshot of frontend test results
-- Screenshot of E2E test result
-
-### Approval criteria
-
-- Tests run successfully.
-- Tests cover positive and negative scenarios.
-- Business rules are validated by automated tests.
-
----
-
-## Task 9 - Use MCP to connect GitHub Copilot to project context
-
-### Objective
-Demonstrate how MCP can provide external or structured context to GitHub Copilot during development.
-
-### Activities
-
-Use an organizer-provided MCP server or create a lightweight local MCP server under `tools/mcp` that exposes useful project context such as:
-
-- Domain glossary
-- Sample project and risk data
-- API contract summary
-- Test data rules
-- Architecture decision records
-
-Add MCP setup instructions in `docs/mcp-setup.md`.
-
-Use MCP-backed context to complete one development task, such as:
-
-- Generate additional dashboard test cases
-- Review the API contract
-- Create sample seed data
-- Generate documentation from project metadata
-
-### GitHub Copilot focus
+**GitHub Copilot focus:** Demonstrate:
 
 - MCP configuration
-- Using external context safely
-- Prompting GitHub Copilot with structured project context
+- Tool discovery
+- Context grounding
 
-### Deliverables
+### Task 8: Implement Multi-Agent Orchestration Using Agent Framework
 
-- MCP setup documentation
-- MCP server or documented MCP connection
-- One feature or test improved using MCP context
+**Objective:** Create the Command Center Orchestrator.
 
-### Evidence to submit
+**Activities:** Implement:
 
-- Screenshot of MCP setup
-- Screenshot showing GitHub Copilot using MCP context
-- Link or screenshot of changed code or tests
+- Agent routing
+- Agent handoff pattern
+- Response aggregation
+- Multi-agent workflows
 
-### Approval criteria
+**GitHub Copilot focus:** Use Coding Agent to implement orchestration across multiple files.
 
-- MCP usage is clearly demonstrated.
-- MCP context is relevant to the application.
-- No secrets or private data are exposed.
+### Task 9: Agent Evaluation and Testing
 
----
+**Objective:** Validate solution quality.
 
-## Task 10 - Use GitHub Copilot agent workflow for a multi-file feature
+**Activities:** Create evaluations for:
 
-### Objective
-Use agentic development to implement a complete feature across backend, frontend, and tests.
+- Accuracy
+- Hallucination reduction
+- Tool grounding
+- Agent routing correctness
+- Response quality
 
-### Activities
+**Deliverables:**
 
-Select one feature, such as:
+- `evaluation-plan.md`
+- `test-results.md`
 
-- Risk heatmap dashboard
-- Milestone delay prediction indicator
-- Bulk action assignment
-- Project health export
-- Reviewer approval workflow
+**GitHub Copilot focus:** Use Copilot to generate evaluation cases and test scenarios.
 
-Use GitHub Copilot Agent Mode or an approved agent workflow to plan and implement the feature.
+### Task 10: Use GitHub Copilot Coding Agent for an End-to-End Feature
+
+**Objective:** Complete a feature using Agent Mode.
+
+**Examples:**
+
+- Incident Investigation Workflow
+- Delayed Activity Analysis
+- Contractor Escalation Workflow
+- Safety Inspection Assistant
 
 The feature must include:
 
-- Backend API or business logic change
-- Angular UI change
+- Prompt updates
+- Agent changes
+- Tool changes
 - Tests
-- Documentation update
+- Documentation
 
-### GitHub Copilot focus
+**GitHub Copilot focus:** Demonstrate Coding Agent planning and implementation.
 
-- Agents
-- Multi-file implementation
-- Review and refinement of generated changes
+### Task 11: Hooks, Quality Gates, and Automation
 
-### Deliverables
+**Objective:** Ensure production-quality development practices.
 
-- Feature plan in `docs/feature-plan.md`
-- Implemented feature
-- Tests and documentation
+**Activities:** Implement:
 
-### Evidence to submit
+- Prompt validation checks
+- Agent configuration checks
+- Test execution
+- Quality gates
+- Local hooks
 
-- Screenshot of agent-assisted plan
-- Screenshot of working feature
-- Screenshot of tests
+**Deliverables:**
 
-### Approval criteria
+- Automation scripts
+- Quality checklist
 
-- Feature works end to end.
-- Generated code was reviewed and refined by the team.
-- Tests prove the feature behavior.
+### Task 12: Executive Demo and Final Showcase
 
----
+**Objective:** Demonstrate a complete Construction Command Center experience.
 
-## Task 11 - Add hooks, quality gates, and automation scripts
+**Required demo scenario:** A project manager asks:
 
-### Objective
-Prevent low-quality code from entering the task submission.
+> Heavy rains have delayed runway excavation and water leakage has been reported near Terminal B. What should we do?
 
-### Activities
+The solution should demonstrate:
 
-Add local quality automation:
+1. The Orchestrator receives the request.
+2. The Site Operations Agent reviews schedules.
+3. The Risk Agent analyzes project impact.
+4. The Safety Agent reviews compliance requirements.
+5. The Expert Agent identifies specialists.
+6. The Orchestrator produces a consolidated action plan.
 
-- formatting script
-- linting script
-- backend test script
-- frontend test script
-- pre-submission checklist
-- optional local pre-run hook that runs checks before packaging the task submission
+## Leaderboard Scoring
 
-Suggested validation behavior:
+| Category | Points |
+| --- | ---: |
+| GitHub Copilot Usage | 15 |
+| Prompt Engineering | 10 |
+| Skills and Instructions | 10 |
+| Agent Design | 15 |
+| Agent Framework Usage | 15 |
+| MCP Integration | 15 |
+| Azure AI Foundry Usage | 10 |
+| Evaluation and Testing | 5 |
+| Demo and Documentation | 5 |
+| **Total** | **100** |
 
-```text
-format-check: verifies backend and frontend formatting
-lint-check: runs frontend linting and backend analyzers where available
-test-check: runs backend and frontend tests
-submission-check: confirms screenshots, prompt log, and docs are updated
-```
+## Definition of Done
 
-### GitHub Copilot focus
-
-- Use GitHub Copilot to generate automation scripts.
-- Use GitHub Copilot to troubleshoot failing checks.
-- Use GitHub Copilot to improve validation scripts.
-
-### Deliverables
-
-- `tools/quality` scripts
-- `docs/submission-checklist.md`
-- Instructions for running checks locally
-
-### Evidence to submit
-
-- Screenshot of quality scripts running locally
-- Screenshot of successful test run
-- Screenshot of completed submission checklist
-
-### Approval criteria
-
-- Quality checks are documented.
-- Scripts are easy to run.
-- Build and tests pass locally.
-
----
-
-## Task 12 - Final polish, documentation, demo, and showcase submission
-
-### Objective
-Prepare the final application for leadership review and scoring.
-
-### Activities
-
-- Update `README.md` with setup and run instructions.
-- Add `docs/demo-script.md`.
-- Add screenshots of the application.
-- Add architecture diagram.
-- Add final prompt log summary.
-- Add known limitations and future enhancements.
-- Prepare a 5-minute demo.
-
-Final demo must show:
-
-1. Dashboard
-2. Project creation or selection
-3. Risk creation
-4. Risk score calculation
-5. Action assignment
-6. Role-based behavior
-7. Tests or quality-check evidence
-8. GitHub Copilot artifacts: instructions, prompts, skills, MCP, agents, hooks
-
-### GitHub Copilot focus
-
-- Use GitHub Copilot to improve documentation.
-- Use GitHub Copilot to create demo script and reviewer checklist.
-
-### Deliverables
-
-- Final working application
-- Complete documentation
-- Demo script
-- Packaged final submission
-
-### Evidence to submit
-
-- Application screenshots
-- Demo video or demo screenshots
-- Final test and quality-check screenshot
-- Link to final packaged submission
-- Link or screenshot of final prompt log
-
-### Approval criteria
-
-- Application runs end to end.
-- Documentation is clear.
-- Demo is business-relevant.
-- All required GitHub Copilot concepts are demonstrated.
-
----
-
-# Optional bonus tasks
-
-## Bonus Task A - Deploy the application
-
-Deploy the backend and frontend to an approved environment such as Azure App Service, Azure Static Web Apps, IIS, containerized local demo, or another approved platform.
-
-### Evidence
-
-- Deployment URL or recorded demo
-- Screenshot of deployed app
-- Deployment instructions
-
----
-
-## Bonus Task B - Add accessibility and performance improvements
-
-Improve the Angular frontend for accessibility and performance.
-
-### Examples
-
-- Keyboard navigation
-- Color contrast checks
-- ARIA labels
-- Lazy-loaded routes
-- Loading indicators
-- Empty states
-
-### Evidence
-
-- Screenshot of accessibility check
-- Screenshot or note on performance improvement
-
----
-
-# Two-week execution plan
-
-## Before kickoff
-
-- Confirm teams and participants.
-- Publish hackathon instructions and task documents.
-- Share pre-reads and environment setup checklist.
-- Confirm office-hour schedule.
-- Confirm reviewers and approval SLA.
-- Confirm submission form and evidence requirements.
-
-## Week 1
-
-| Day | Focus | Expected checkpoint |
-|---|---|---|
-| Day 1 | Kickoff, team setup, architecture | Task 1 approved |
-| Day 2 | GitHub Copilot instructions, prompts, skills | Task 2 approved |
-| Day 3 | App scaffolding and local build | Task 3 approved |
-| Day 4 | Domain model and business rules | Task 4 approved |
-| Day 5 | Backend APIs | Task 5 approved |
-
-## Week 2
-
-| Day | Focus | Expected checkpoint |
-|---|---|---|
-| Day 6 | Angular UI | Task 6 approved |
-| Day 7 | Auth, roles, audit | Task 7 approved |
-| Day 8 | Testing | Task 8 approved |
-| Day 9 | MCP and agent workflow | Tasks 9 and 10 approved |
-| Day 10 | Hooks, quality gates, final polish, demo | Tasks 11 and 12 approved |
-
----
-
-# Office hours plan
-
-Run **3-4 office hours per week**, each for 1 hour.
-
-Suggested agenda:
-
-1. First 10 minutes - common blockers and announcements
-2. Next 35 minutes - team-specific Q&A and troubleshooting
-3. Next 10 minutes - GitHub Copilot usage tips
-4. Last 5 minutes - submission reminders and leaderboard update
-
----
-
-# Reviewer checklist
-
-Reviewers should check:
-
-- Does the application run locally?
-- Is the business logic implemented in .NET?
-- Does the Angular UI call real APIs?
-- Are tests present and passing?
-- Are GitHub Copilot instructions, prompts, skills, agents, MCPs, and hooks demonstrated?
-- Are screenshots and prompt logs submitted after each task?
-- Is the final demo business-relevant for LTM?
-
----
-
-# Final definition of done
-
-A team is considered complete when:
+A team is considered successful when:
 
 - All mandatory tasks are approved.
-- The final application runs end to end.
-- Backend, frontend, and tests are included.
-- Local build, test, and quality checks pass.
-- The prompt log is complete.
-- GitHub Copilot instructions, prompts, skills, agents, MCPs, and hooks are visible in the submission.
-- Final demo and documentation are submitted.
+- Azure AI Foundry is used.
+- At least four specialized agents are implemented.
+- MCP is integrated.
+- Agent Framework orchestration is demonstrated.
+- GitHub Copilot Instructions, Prompts, Skills, Agents, MCP, and Hooks are visible in the solution.
+- Evaluation results are documented.
+- The executive demo scenario runs successfully end-to-end.
