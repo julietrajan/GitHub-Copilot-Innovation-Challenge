@@ -5,7 +5,7 @@ theme: jekyll-theme-cayman
 ---
 
 <nav aria-label="Challenge menu">
-  <strong>Challenges:</strong>
+  <strong>Menu:</strong>
   <a href="challenge-2.html">Pre-requisites</a>
   <a href="./">Innovation Challenge Center</a> |
 
