@@ -6,12 +6,13 @@ theme: jekyll-theme-cayman
 
 <nav aria-label="Challenge menu">
   <strong>Challenges:</strong>
-  <a href="./">1. Construction Command Center</a> |
-  <a href="challenge-2.html">2. Challenge Placeholder</a>
+  <a href="challenge-2.html">Pre-requisites</a>
+  <a href="./">Innovation Challenge Center</a> |
+
 </nav>
 
 ---
 
-# Challenge 2
+# Pre-requisites
 
-This challenge is coming soon.
+Coming soon.
