@@ -4,9 +4,9 @@ description: Build. Innovate. Transform.
 theme: jekyll-theme-cayman
 ---
 
-<nav aria-label="Challenge menu">
+<nav aria-label="Pre-requisites menu">
   <strong>Menu:</strong>
-  <a href="challenge-2.html">Pre-requisites</a> |
+  <a href="pre-requisites.html">Pre-requisites</a> |
   <a href="./">Innovation Challenge Center</a> 
 
 </nav>
