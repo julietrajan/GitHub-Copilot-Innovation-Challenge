@@ -15,6 +15,14 @@ theme: jekyll-theme-cayman
 
 # Pre-requisites
 
+## AI Skills Navigator Learning Path
+
 Complete the AI Skills Navigator learning path to build the foundational AI skills needed for the Innovation Challenge.
 
-- [AI Skills Navigator | Your skilling playlist | LTM - Learning Path for the Innovation Challenge](https://aiskillsnavigator.microsoft.com/playlists/e84b5ae4-4618-4272-a294-96a354763bec)
+- [AI Skills Navigator: LTM Learning Path for the Innovation Challenge](https://aiskillsnavigator.microsoft.com/playlists/e84b5ae4-4618-4272-a294-96a354763bec)
+
+## Governed AI Development Handbook
+
+Refer to this handbook for guidance on governed AI development with GitHub Copilot.
+
+- [GitHub Copilot Governed AI Development Handbook](files/GitHub_Copilot_Governed_AI_Development_Handbook.pdf)
